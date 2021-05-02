@@ -5,6 +5,8 @@
 
   var vm = new Vue({
     el: "#app",
-    data: {},
+    data: {
+      todos: ["task1", "task2", "task3"],
+    },
   });
 })();
