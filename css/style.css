@@ -13,3 +13,7 @@ body {
   border-bottom: 1px solid #ddd;
   padding: 16px 0;
 }
+
+#app li {
+  line-height: 1.5;
+}
