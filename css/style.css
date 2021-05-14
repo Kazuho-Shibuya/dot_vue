@@ -17,3 +17,7 @@ body {
 #app li {
   line-height: 1.5;
 }
+
+#app input[type="text"] {
+  padding: 2px;
+}
