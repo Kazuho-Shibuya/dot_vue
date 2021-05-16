@@ -10,6 +10,7 @@
     methods: {
       addItem: function () {
         this.todos.push(this.newItem);
+        this.newItem = "";
       },
     },
   });
