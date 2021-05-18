@@ -14,7 +14,7 @@
     <ul>
       <li v-for="(todo, index) in todos">
         {{ todo }}
-        <span @click="deleteItem(index)">[x]</span>
+        <span @click="deleteItem(index)" class="command">[x]</span>
       </li>
     </ul>
     <form @submit.prevent="addItem">
