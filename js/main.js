@@ -5,11 +5,28 @@
     el: "#app",
     data: {
       newItem: "",
-      todos: ["task1", "task2", "task3"],
+      todos: [
+        {
+          title: "task1",
+          isDone: false,
+        },
+        {
+          title: "task2",
+          isDone: false,
+        },
+        {
+          title: "task3",
+          isDone: true,
+        },
+      ],
     },
     methods: {
       addItem: function () {
-        this.todos.push(this.newItem);
+        var item = {
+          title: this.newItem,
+          isDone: false,
+        };
+        this.todos.push(item);
         this.newItem = "";
       },
       deleteItem: function (index) {
