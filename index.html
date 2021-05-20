@@ -13,6 +13,7 @@
     <h1>My Todos</h1>
     <ul>
       <li v-for="(todo, index) in todos">
+        <input type="checkbox">
         {{ todo.title }}
         <span @click="deleteItem(index)" class="command">[x]</span>
       </li>
