@@ -35,5 +35,13 @@
         }
       },
     },
+    computed: {
+      remaining: function () {
+        var items = this.todos.filter(function (todo) {
+          return !todo.isDone;
+        });
+        return items.length;
+      },
+    },
   });
 })();
