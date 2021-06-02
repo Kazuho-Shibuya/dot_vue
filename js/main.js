@@ -34,6 +34,14 @@
           this.todos.splice(index, 1);
         }
       },
+      purge: function () {
+        if (!confirm("delete finish?")) {
+          return;
+        }
+        this.todos = this.todos.filter(function (todo) {
+          return !todo.isDone;
+        });
+      },
     },
     computed: {
       remaining: function () {
