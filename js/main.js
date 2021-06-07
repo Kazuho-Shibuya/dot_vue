@@ -20,6 +20,12 @@
         },
       ],
     },
+    watch: {
+      todos: function () {
+        localStorage.setItem("todos", JSON.stringify(this.todos));
+        alert("data saved!");
+      },
+    },
     methods: {
       addItem: function () {
         var item = {
