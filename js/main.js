@@ -22,7 +22,7 @@
     },
     watch: {
       todos: function () {
-        localStorage.setItem(todos, JSON.stringify(this.todos));
+        localStorage.setItem("todos", JSON.stringify(this.todos));
         alert("data saved!");
       },
     },
