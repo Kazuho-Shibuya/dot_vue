@@ -21,9 +21,11 @@
       ],
     },
     watch: {
-      todos: function () {
-        localStorage.setItem("todos", JSON.stringify(this.todos));
-        alert("data saved!");
+      todos: {
+        handler: function () {
+          localStorage.setItem("todos", JSON.stringify(this.todos));
+        },
+        deep: true,
       },
     },
     methods: {
